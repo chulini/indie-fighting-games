@@ -1,0 +1,11 @@
+<header>
+
+  <ul class="nav-bar" >
+<% site.tags.sort('date', -1).forEach(function(tag) { %>
+    <li class="tag"><a href="<%- tag.path %>"><%- titlecase(tag.name) %></a></li>
+    
+<% })  %>
+  </ul>
+
+</header>
+

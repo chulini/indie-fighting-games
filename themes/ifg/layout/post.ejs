@@ -1,0 +1,9 @@
+<%- partial('partial/join') %>
+<div class="post-content">
+    <h2 class="title"><a href="/<%- path %>"><%- titlecase(page.title) %></a></h2>
+    <p class="date"><%- date(page.date, 'MMM Do YYYY') %></p>
+    <%- page.content %>
+</div>
+<%- partial('partial/join') %>
+
+<div id="disqus_thread"></div>

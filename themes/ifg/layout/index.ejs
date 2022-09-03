@@ -1,0 +1,14 @@
+<div class="grid">
+<% site.posts.sort('date', -1).forEach(function(post) { %>
+    <div class="game-box">
+      <a href="<%- post.path %>"><%- titlecase(post.title) %></a>
+
+      <% if (post.tags && post.tags.length){ 
+            post.tags.forEach(function(tag){ %>
+                <%- tag.name %>
+            <% }) %>
+      <% } %>
+
+    </div>
+<% }) %>
+</div>
