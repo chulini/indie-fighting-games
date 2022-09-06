@@ -74,8 +74,8 @@ body {
 .game-box {
   position: relative;
   float: left;
-  width: 324px;
-  height: calc(151px + 28px + 83px);
+  width: 375px;
+  height: calc(171px + 28px + 83px);
   margin: 3px;
   padding: 0px;
   overflow: hidden;
@@ -96,8 +96,8 @@ button.is-checked {
 }
 
 img.game-box-img {
-  width: 324px;
-  height: 151px;
+  width: 375px;
+  height: 175px;
 }
 
 img.game-box-bg {
