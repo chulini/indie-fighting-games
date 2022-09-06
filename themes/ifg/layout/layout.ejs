@@ -5,15 +5,11 @@
     </head>
     
     <body>
+        <%- partial('partial/nav-bar') %>
         <div class="wrapper">
-            <%- partial('partial/nav-bar') %>
             <%- body %>
-            
         </div>
         <%- partial('partial/footer') %>
-        <script href="<%- url_for('js/jquery-3.6.0.min.js') %>"></script>
-        <script href="<%- url_for('js/isotope.pkgd.min.js') %>"></script>
-        <script href="<%- url_for('js/filtering.js') %>"></script>
     </body>   
 
 </html>

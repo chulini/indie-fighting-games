@@ -1,11 +1,23 @@
 <header>
-
-  <ul class="nav-bar" >
-<% site.tags.sort('date', -1).forEach(function(tag) { %>
-    <li class="tag"><a href="<%- tag.path %>"><%- titlecase(tag.name) %></a></li>
+  <div id="filters">
+<% site.tags.sort('name', 1).forEach(function(tag) { 
+/*
+Tag fields:
+  name (Air Jump)
+  _id (cl7mc4xdf00027o42d5tbhsae)
+  slug (air-jump)
+  path (tags/air-jump/)
+  permalink
+  posts
+  length
+  _model
+  _schema
+*/
+%>
     
-<% })  %>
-  </ul>
+    <button data-filter="<%- tag.slug %>" class="button" id="button-<%- tag.slug %>"><%- titlecase(tag.name) %></button>
 
+<% })  %>
+  </div>
 </header>
 

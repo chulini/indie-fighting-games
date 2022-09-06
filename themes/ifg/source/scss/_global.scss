@@ -1,9 +1,15 @@
 body{
     background: $palette-0;
 }
+.wrapper{
+    margin: 0 auto;
+    padding-top: 25px;
+}
 
 .grid {
-    border: 1px solid $palette-0;
+    // margin-top: 100px;
+    // border: 10px solid $palette-2;
+    margin: 5px;
 }
 .grid:after {
     content: '';
@@ -13,11 +19,144 @@ body{
 
 
 .game-box{
-    background: $palette-1;
     position: relative;
     float: left;
-    width: 470px; // Steam capsule width+5+5
-    height: 225px; // Steam capsule height+5+5
-    margin: 5px;
+    width: 324px; // Steam capsule width 460
+    height: calc(151px + 28px + 83px); // Steam capsule height 215
+    margin: 3px;
+    padding: 0px;
+    overflow: hidden;
+}
+button{
+    background-color: $palette-3;
+    color: $palette-2;
+    border:1px solid $palette-2;
+    font-weight: bold;
+    margin: 0 5px 5px 0;
+}
+
+button.is-checked{
+    background-color: $palette-2;
+    color: $palette-0;
+    border:1px solid $palette-2;
+}
+
+img.game-box-img{
+    width: 324px;
+    height: 151px; 
+}
+img.game-box-bg{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+h2{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    color: $palette-2;
+    padding: 3px 5px 7px 5px;
+    height: 14px;
+    line-height: 18px;
+    overflow: hidden;
+    background-color: $palette-3;
+}
+
+p, button{
+    font-family: 'Exo 2', sans-serif;
+}
+
+.game-box-tags-container{
+    padding: 5px 0 0 0;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    height: 90px;
+    margin: -3px 0 0 0;
+}
+
+.game-box-tag{
+    float: right;
+    display: inline;
+    margin: 0px 5px 5px 0;
+    padding: 3px 5px;
+    color: $palette-0;
+    // text-shadow: -1px -1px 0 $palette-0, 1px -1px 0 $palette-0, -1px 1px 0 $palette-0, 1px 1px 0 $palette-0;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 14px;
+}
+
+#filters{
+    margin: 0;
+    padding: 5px;
+    background-color: $palette-3;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+.price{
+    background-color: $palette-3;
+    color: $palette-2;
+    padding: 5px;
+    font-family: 'Exo 2', sans-serif;
+    text-align: right;
+    margin: -3px 0 0 0;
+}
+
+.hover-info{
+    position: absolute;
+    top: 24px;
+    background-color: $palette-3;
+    width: 100%;
+    height: calc(151px + 83px);
+    z-index: 1;
+
+    .links-container{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        .link-icon{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+        .link{
+            background-image: url("/images/link.png");
+        }
+        .twitter{
+            background-image: url("/images/twitter.png");
+        }
+        .discord{
+            background-image: url("/images/discord.png");
+        }
+    }
+    
+}
+
+footer{
+    background-color: $palette-3;
+    position: fixed;
+    bottom:0;
+    width: 100%;
     padding: 10px;
+    text-align: center;
+    color: $palette-2;
+    font-size: 12px;
+    z-index: 99;
+    p{
+        margin: 2.5px 0;
+    }
+    p a{
+        color: $palette-0;
+        text-decoration: none;
+        font-weight: bold;
+        background-color: $palette-2;
+        padding: 0 5px;
+    }
 }

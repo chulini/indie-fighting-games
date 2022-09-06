@@ -1,14 +1,41 @@
 <div class="grid">
 <% site.posts.sort('date', -1).forEach(function(post) { %>
-    <div class="game-box">
-      <a href="<%- post.path %>"><%- titlecase(post.title) %></a>
-
-      <% if (post.tags && post.tags.length){ 
-            post.tags.forEach(function(tag){ %>
-                <%- tag.name %>
-            <% }) %>
+    <div class="game-box <% if (post.tags && post.tags.length){ post.tags.forEach(function(tag){ %><%- tag.slug+" " %><% }) %><% } %>" style="background-image:url('<%- post.img %>')">
+      <h2 class="<%- post.path %>"><%- titlecase(post.title) %></h2>
+      <% if(post.price) { %> 
+        <div class="price"><%- post.price %></div>
+      <% } %>
+    <% if(post.img) { %>
+      <img src="<%- post.img %>" class="game-box-img">
       <% } %>
 
+
+
+
+      <div class="game-box-tags-container">
+        <% if (post.tags && post.tags.length){ post.tags.forEach(function(tag){ %>
+          <div class="game-box-tag"><%- titlecase(tag.name) %></div>
+        <% }) %><% } %>
+      </div>
+
+
+
+      <div class="hover-info" style="display: none;">
+      <% if(post.link || post.twitter || post.discord) { %> 
+        <div class="links-container">
+        <% if(post.link) { %> 
+          <a href="<%- post.link %>" class="link-icon link" target="_blank"></a>
+        <% } %>
+        <% if(post.twitter) { %> 
+          <a href="<%- post.twitter %>" class="link-icon twitter" target="_blank"></a>
+        <% } %>
+        <% if(post.discord) { %> 
+          <a href="<%- post.discord %>" class="link-icon discord" target="_blank"></a>
+        <% } %>
+        </div>
+      <% } %>
+      </div>
     </div>
 <% }) %>
+
 </div>
