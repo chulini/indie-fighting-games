@@ -1,7 +1,7 @@
 ---
 title: Resistance 204X
 date: 2022-09-03 19:24:28
-tags: [2D fighter, PC, mobile, platforms, online PvP, rollback netcode]
+tags: [2D fighter, PC, mobile, online PvP, rollback netcode, 2.5D]
 price: In closed beta
 link: https://resistance204x.com
 twitter: https://twitter.com/resistance204x
