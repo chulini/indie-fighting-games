@@ -21,8 +21,8 @@ body{
 .game-box{
     position: relative;
     float: left;
-    width: 375px; // Steam capsule width 460
-    height: calc(171px + 28px + 83px); // Steam capsule height 215
+    width: 397px; // Steam capsule width 460
+    height: calc(186px + 28px + 83px); // Steam capsule height 215
     margin: 3px;
     padding: 0px;
     overflow: hidden;
@@ -42,8 +42,8 @@ button.is-checked{
 }
 
 img.game-box-img{
-    width: 375px;
-    height: 175px; 
+    width: 397px;
+    height: 186px; 
 }
 img.game-box-bg{
     position: absolute;
