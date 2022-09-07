@@ -1,7 +1,6 @@
 function SetWrapperMargin(){
     let filtersHeight = $('#filters').outerHeight();
     let footerHeight = $('footer').outerHeight();
-    console.log("footerHeight "+footerHeight);
     $('.wrapper').css('padding-top', filtersHeight);
     $('.wrapper').css('padding-bottom', footerHeight);
 }

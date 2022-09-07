@@ -6,7 +6,6 @@ function shuffleGames(){
 }
 
 $(document).ready(function () {
-  console.log('document ready')  
   shuffleGames();
 
   $('.grid').isotope({
@@ -43,9 +42,6 @@ function UpdateSelectedTagsArray(clickedTagSlug){
 function UpdateIsotopeGrid(){
   let selector = "";
   for(let i = 0; i < selectedTags.length; i++){
-    // if(i > 0){
-    //   selector += ", "  ;
-    // }
     selector += "."+selectedTags[i];
   }
 
