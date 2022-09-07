@@ -1,5 +1,14 @@
+function shuffleGames(){
+  var grid = document.getElementsByClassName('grid')[0];
+  for (var i = grid.children.length; i >= 0; i--) {
+      grid.appendChild(grid.children[Math.random() * i | 0]);
+  }
+}
+
 $(document).ready(function () {
-  console.log('document ready')
+  console.log('document ready')  
+  shuffleGames();
+
   $('.grid').isotope({
     // options...
     itemSelector: '.game-box',
