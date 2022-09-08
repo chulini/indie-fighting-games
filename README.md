@@ -17,7 +17,7 @@ http://localhost:4000
 $ hexo new name-of-the-game
 ```
 Will create `source\_posts\name-of-the-game.md`
-Now, you can add the game data like this:
+Now, you can modify that file and add the game data like this:
 ```
 
 ---
