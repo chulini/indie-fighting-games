@@ -5,6 +5,6 @@ tags: [anime, PC]
 img: https://i.imgur.com/pwWFyHM.png
 price: $8.99 One Time	
 link: https://store.steampowered.com/app/390710/Acceleration_of_SUGURI_2/	
-discord: discord.gg/fruitbatfactory	
+discord: http://discord.gg/fruitbatfactory	
 twitter: https://twitter.com/FruitbatFactory
 ---
