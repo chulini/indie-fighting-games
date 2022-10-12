@@ -5,4 +5,5 @@ tags: [2D fighter, PC, 2.5D, online PvP]
 img: https://i.imgur.com/9VrbB1x.jpg
 link: https://store.steampowered.com/app/1745350/Clash_of_the_Metal/	
 twitter: https://twitter.com/ClashOfTheMetal
+price: Available for Wishlist
 ---
