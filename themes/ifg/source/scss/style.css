@@ -43,7 +43,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -66,7 +66,7 @@ body {
 }
 
 .grid:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
@@ -75,14 +75,14 @@ body {
   position: relative;
   float: left;
   width: 397px;
-  height: calc(186px + 28px + 83px);
+  height: 297px;
   margin: 3px;
   padding: 0px;
   overflow: hidden;
 }
 
 button {
-  background-color: #c4085d;
+  background-color: #000;
   color: #e5e5e5;
   border: 1px solid #e5e5e5;
   font-weight: bold;
@@ -107,18 +107,18 @@ img.game-box-bg {
 }
 
 h2 {
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: bold;
   color: #e5e5e5;
   padding: 3px 5px 7px 5px;
   height: 14px;
   line-height: 18px;
   overflow: hidden;
-  background-color: #c4085d;
+  background-color: #000;
 }
 
 p, button {
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
 }
 
 .game-box-tags-container {
@@ -136,24 +136,24 @@ p, button {
   margin: 0px 5px 5px 0;
   padding: 3px 5px;
   color: #212221;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 14px;
 }
 
 #filters {
   margin: 0;
   padding: 5px;
-  background-color: #c4085d;
+  background-color: #000;
   position: fixed;
   z-index: 99;
   width: 100%;
 }
 
 .price {
-  background-color: #c4085d;
+  background-color: #000;
   color: #e5e5e5;
   padding: 5px;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   text-align: right;
   margin: -3px 0 0 0;
 }
@@ -161,43 +161,37 @@ p, button {
 .hover-info {
   position: absolute;
   top: 24px;
-  background-color: #c4085d;
+  background-color: #000;
   width: 100%;
-  height: calc(190px + 83px);
+  height: 273px;
   z-index: 1;
 }
-
 .hover-info .links-container {
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
 }
-
 .hover-info .links-container .link-icon {
   display: inline-block;
   width: 100px;
   height: 100px;
 }
-
 .hover-info .links-container .link {
   background-image: url("/images/link.png");
 }
-
 .hover-info .links-container .twitter {
   background-image: url("/images/twitter.png");
 }
-
 .hover-info .links-container .discord {
   background-image: url("/images/discord.png");
 }
 
 footer {
-  background-color: #c4085d;
+  background-color: #000;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -207,16 +201,13 @@ footer {
   font-size: 12px;
   z-index: 99;
 }
-
 footer p {
   margin: 2.5px 0;
 }
-
 footer p a {
   color: #212221;
   text-decoration: none;
   font-weight: bold;
   background-color: #e5e5e5;
   padding: 0 5px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
