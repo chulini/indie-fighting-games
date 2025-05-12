@@ -2,6 +2,8 @@
 ## Installation
 ```
 $ sudo npm install -g hexo-cli
+$ cd indie-fighting-games
+$ npm install
 ```
 ## Run localhost
 ```
